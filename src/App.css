@@ -1,0 +1,136 @@
+@@ .. @@
+ .disclaimer p {
+   color: #742a2a;
+   line-height: 1.6;
+ }
+ 
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e2e8f0;
+  border-top: 2px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
++/* AI-specific styles */
++.ai-badge {
++  display: inline-block;
++  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
++  color: white;
++  padding: 0.25rem 0.75rem;
++  border-radius: 15px;
++  font-size: 0.8rem;
++  margin-top: 0.5rem;
++  font-weight: 600;
++}
++
++.confidence-score {
++  color: #4a5568;
++  font-size: 0.9rem;
++  margin-top: 0.5rem;
++  font-weight: 500;
++}
++
++.detailed-analysis-section {
++  margin-bottom: 2rem;
++  padding: 1.5rem;
++  background: #f8fafc;
++  border-radius: 10px;
++  border: 1px solid #e2e8f0;
++}
++
++.detailed-analysis-section h3 {
++  color: #2d3748;
++  margin-bottom: 1rem;
++  border-bottom: 2px solid #667eea;
++  padding-bottom: 0.5rem;
++}
++
++.analysis-content {
++  display: grid;
++  gap: 1.5rem;
++}
++
++.condition-description h4,
++.treatment-recommendations h4,
++.technical-analysis h4,
++.ai-insights h4 {
++  color: #2d3748;
++  margin-bottom: 0.75rem;
++  font-size: 1.1rem;
++}
++
++.condition-description p {
++  color: #4a5568;
++  line-height: 1.6;
++}
++
++.treatment-recommendations ul,
++.ai-insights ul {
++  color: #4a5568;
++  padding-left: 1.5rem;
++}
++
++.treatment-recommendations li,
++.ai-insights li {
++  margin-bottom: 0.5rem;
++  line-height: 1.5;
++}
++
++.analysis-grid {
++  display: grid;
++  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
++  gap: 1rem;
++  margin-top: 1rem;
++}
++
++.analysis-item {
++  background: white;
++  padding: 1rem;
++  border-radius: 8px;
++  border: 1px solid #e2e8f0;
++}
++
++.analysis-item strong {
++  color: #2d3748;
++  display: block;
++  margin-bottom: 0.5rem;
++  font-size: 0.95rem;
++}
++
++.analysis-item p {
++  color: #718096;
++  margin: 0.25rem 0;
++  font-size: 0.9rem;
++}
++
+ .result-actions {
+   display: flex;
+   gap: 1rem;
+@@ .. @@
+   .diagnosis-card {
+     grid-template-columns: 1fr;
+     gap: 1rem;
+   }
+   
++  .analysis-grid {
++    grid-template-columns: 1fr;
++  }
++  
+   .form-actions, .result-actions {
+     flex-direction: column;
+   }
